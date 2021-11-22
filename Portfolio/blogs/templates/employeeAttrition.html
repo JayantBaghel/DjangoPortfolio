@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .input-fields-container {
+                text-align: center;
+            }
+
+            .input-fields-container p{
+                margin: 20px;
+                font-size: 20;
+            }
+
+            .logo-container img{
+                text-align: left;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo-container">
+            <img src="https://www.guardianlife.com/static/logo-og.svg" />
+        </div>
+        <h1 style="text-align:center">Retention Score and High Performer Dashboard</h1>
+        <div class="input-fields-container" >
+            
+            <p>Enter Details</p> 
+            <div class="input-fields">
+                <div class="age-field">
+                    <label for="age">Age :</label><br>
+                    <input type="text" id="age" name="age">
+                </div>
+                <select name="travel-selector" id="travel-selector">
+                    <option value=>Select Travel</option>
+                        <option value="Travel_Rarely">Travel_Rarely</option>
+                        <option value="Travel_Frequently">Travel_Frequently</option>
+                        <option value="Non-Travel">Non-Travel</option>
+                </select> 
+                <select name="department-selector" id="department-selector">
+                    <option value=>Select Department</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Research & Development">Research & Development</option>
+                </select> 
+                <div class="distance-field">
+                    <label for="distance">Distance from home :</label><br>
+                    <input type="text" id="distance" name="distance">
+                </div>
+                <select name="education-selector" id="education-selector">
+                    <option value=>Select Education</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                </select> 
+                <select name="education-field-selector" id="education-field-selector">
+                    <option value=>Select Education Field</option>
+                        <option value="Life Sciences">Life Sciences</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Technical Degree">Technical Degree</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Other">Other</option>
+                </select> 
+                <select name="gender-selector" id="gender-selector">
+                    <option value=>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                </select><br>
+                <select name="job-level-selector" id="job-level-selector">
+                    <option value=>Select Job Level</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                </select> 
+                <select name="job-role-selector" id="job-role-selector">
+                    <option value=>Select Job Role</option>
+                        <option value="Healthcare Representative">Healthcare Representative</option>
+                        <option value="Research Scientist">Research Scientist</option>
+                        <option value="Sales Executive">Sales Executive</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Research Director">Research Director</option>
+                        <option value="Laboratory Technician">Laboratory Technician</option>
+                        <option value="Manufacturing Director">Manufacturing Director</option>
+                        <option value="Sales Representative">Sales Representative</option>
+                        <option value="Manager">Manager</option>
+                </select> 
+                <select name="maritial-status-selector" id="maritial-status-selector">
+                    <option value=>Select Maritial Status</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                </select> 
+                <div class="monthly-income-field">
+                    <label for="income">Monthly Income :</label><br>
+                    <input type="text" id="income" name="income">
+                </div>
+                <div class="companies-worked-field">
+                    <label for="companies-worked">Number of Companies Worked in :</label><br>
+                    <input type="text" id="companies-worked" name="companies-worked">
+                </div>
+                <select name="adult-selector" id="adult-selector">
+                    <option value=>Are you over 18 YO</option>
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                </select> 
+                <div class="salary-hike-percent-field">
+                    <label for="salary-hike-percent">Salary Hike Percentage :</label><br>
+                    <input type="text" id="salary-hike-percent" name="salary-hike-percent">
+                </div>
+                <select name="stock-option-level-selector" id="stock-option-level-selector">
+                    <option value=>Select Stock Option Level</option>
+                        <option value=0>0</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                </select> 
+                <div class="total-working-experience-field">
+                    <label for="salary-hike-percent">Total Work Experience (in years) :</label><br>
+                    <input type="text" id="total-working-experience" name="total-working-experience">
+                </div>
+                <div class="training-times-last-year-field">
+                    <label for="training-times-last-year">Training Times Last year :</label><br>
+                    <input type="text" id="training-times-last-year" name="training-times-last-year">
+                </div>
+                <div class="years-at-company-field">
+                    <label for="years-at-company">Years at company :</label><br>
+                    <input type="text" id="years-at-company" name="years-at-company">
+                </div>
+                <div class="years-since-last-promotion-field">
+                    <label for="years-since-last-promotion">Years since last promotion :</label><br>
+                    <input type="text" id="years-since-last-promotion" name="years-since-last-promotion">
+                </div>
+                <div class="years-with-current-manager-field">
+                    <label for="years-with-current-manager">Years with current manager :</label><br>
+                    <input type="text" id="years-with-current-manager" name="years-with-current-manager">
+                </div>
+                <div class="submit-field">
+                    <input type="submit" class="example_a" value="Predict" onclick="submit()">
+                </div>
+        </div>
+
+        <div class="output-container">
+            <p id="output"></p>
+        </div>
+
+        <script>
+            function submit(){
+
+                // console.log('sumbit button working');
+
+                x_test = {}
+
+                x_test['Age'] = document.getElementById("age").value;
+                x_test['BusinessTravel'] = document.getElementById("travel-selector").value;
+                x_test['Department'] = document.getElementById("department-selector").value;
+                x_test['DistanceFromHome'] = document.getElementById("distance").value;
+                x_test['Education'] = document.getElementById("education-selector").value;
+                x_test['EducationField'] = document.getElementById("education-field-selector").value;
+                x_test['Gender'] = document.getElementById("gender-selector").value;
+                x_test['JobLevel'] = document.getElementById("job-level-selector").value;
+                x_test['JobRole'] = document.getElementById("job-role-selector").value;
+                x_test['MaritalStatus'] = document.getElementById("maritial-status-selector").value;
+                x_test['MonthlyIncome'] = document.getElementById("income").value;
+                x_test['NumCompaniesWorked'] = document.getElementById("companies-worked").value;
+                x_test['Over18'] = document.getElementById("adult-selector").value;
+                x_test['PercentSalaryHike'] = document.getElementById("salary-hike-percent").value;
+                x_test['StockOptionLevel'] = document.getElementById("stock-option-level-selector").value;
+                x_test['TotalWorkingYears'] = document.getElementById("total-working-experience").value;
+                x_test['TrainingTimesLastYear'] = document.getElementById("training-times-last-year").value;
+                x_test['YearsAtCompany'] = document.getElementById("years-at-company").value;
+                x_test['YearsSinceLastPromotion'] = document.getElementById("years-since-last-promotion").value;
+                x_test['YearsWithCurrManager'] = document.getElementById("years-with-current-manager").value;
+
+                // console.log(x_test);
+
+                let url = `/ml/employeeattrition/`
+
+                fetch(url, {
+                method: 'POST',
+                headers: {
+                    'test-header': 'application/json'
+                },
+                body: JSON.stringify(x_test)
+                })
+                .then(res => res.json())
+                .then(json => {
+                    console.log(json);
+                    if (json.status == 200){
+                        document.getElementById("output").innerHTML =json.prediction;
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+            }
+        </script>
+
+    </body>
+</html>
